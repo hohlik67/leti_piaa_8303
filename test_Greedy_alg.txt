@@ -1,0 +1,36 @@
+Input
+
+a e
+a b 3.0
+b c 1.0
+c d 1.0
+a d 5.0
+d e 1.0
+
+Output
+
+Current vertex: a
+Next neighbors of vertex a and path to their:
+b --> 3
+d --> 5
+Go to the b
+-----------------------------------
+Current vertex: b
+Next neighbors of vertex b and path to their:
+c --> 1
+Go to the c
+-----------------------------------
+Current vertex: c
+Next neighbors of vertex c and path to their:
+d --> 1
+Go to the d
+-----------------------------------
+Current vertex: d
+Next neighbors of vertex d and path to their:
+e --> 1
+Go to the e
+--------------------------------
+The algorithm has finished work
+Result of algorithm: a b c d e
+
+
