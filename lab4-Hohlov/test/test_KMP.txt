@@ -1,0 +1,169 @@
+Входные данные:
+ab 
+abab
+Результат работы программы:
+-----------------------------------------
+Calculating prefix function
+
+a b
+0 0
+j i
+s[i] != s[j], i++, pi[i] = 0
+
+
+Prefix function for string: a b
+0 0
+
+-----------------------------------------
+Finding substring in the string
+
+Read symbol: a a b
+0 0
+ 
+k
+read symbol == pattern[k], k++
+
+---------------------------------------
+Read symbol: b a b
+0 0
+k
+read symbol == pattern[k], k++ Found string entry in index: 0
+---------------------------------------
+Read symbol: a a b
+0 0
+k
+
+read symbol != pattern[k], k = pi[k-1] = 0 a b
+0 0
+k
+read symbol == pattern[k], k++
+
+---------------------------------------
+Read symbol: b a b
+0 0
+k
+read symbol == pattern[k], k++ Found string entry in index: 2
+---------------------------------------
+
+Result of algorithm work: 0,2
+
+
+
+
+
+
+
+
+
+
+
+
+
+Входные данные:
+aba 
+abcabaabac
+ 
+Результат работы программы:
+
+-----------------------------------------
+Calculating prefix function
+
+a b a 0 0 0
+j i
+s[i] != s[j], i++, pi[i] = 0
+
+a b a 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 1
+
+
+Prefix function for string:
+a b a 0 0 1
+
+-----------------------------------------
+Finding substring in the string
+
+Read symbol: a a b a
+0 0 1
+k
+read symbol == pattern[k], k++
+
+---------------------------------------
+Read symbol: b a b a
+0 0 1
+k
+read symbol == pattern[k], k++
+
+---------------------------------------
+Read symbol: c a b a
+0 0 1
+k
+
+read symbol != pattern[k], k = pi[k-1] = 0 a b a
+ 
+0 0 1
+k
+read symbol != pattern[k]
+
+---------------------------------------
+Read symbol: a a b a
+0 0 1
+k
+read symbol == pattern[k], k++
+
+---------------------------------------
+Read symbol: b a b a
+0 0 1
+k
+read symbol == pattern[k], k++
+
+---------------------------------------
+Read symbol: a a b a
+0 0 1
+k
+read symbol == pattern[k], k++ Found string entry in index: 3
+---------------------------------------
+Read symbol: a a b a
+0 0 1
+k
+
+read symbol != pattern[k], k = pi[k-1] = 1 a b a
+0 0 1
+k
+
+read symbol != pattern[k], k = pi[k-1] = 0 a b a
+0 0 1
+k
+read symbol == pattern[k], k++
+
+---------------------------------------
+ 
+Read symbol: b a b a
+0 0 1
+k
+read symbol == pattern[k], k++
+
+---------------------------------------
+Read symbol: a a b a
+0 0 1
+k
+read symbol == pattern[k], k++ Found string entry in index: 6
+---------------------------------------
+Read symbol: c a b a
+0 0 1
+k
+
+read symbol != pattern[k], k = pi[k-1] = 1 a b a
+0 0 1
+k
+
+read symbol != pattern[k], k = pi[k-1] = 0 a b a
+0 0 1
+k
+read symbol != pattern[k]
+
+---------------------------------------
+
+
+Result of algorithm work: 3,6
+ 

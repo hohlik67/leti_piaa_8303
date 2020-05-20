@@ -1,0 +1,317 @@
+Входные данные:
+
+defabc
+abcdef
+Результат работы программы:
+-----------------------------------------
+
+Calculating prefix function
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j i
+s[i] != s[j], i++, pi[i] = 0
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+a b c d e f d e f a b c d e f a b c
+ 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 1
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0
+j	i
+s[i] == s[j], i++, j++,  pi[i] = 2 a b c d e f d e f a b c d e f a b c
+ 
+0 0 0 0 0 0 0 0 0 1 2 0 0 0 0 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 3
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 0 0 0 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 4
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 4 0 0 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 5
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 0 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 6
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 0 0 0
+j	i
+s[i] != s[j], j = 0
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 0 0 0
+j	i
+s[i] == s[j], i++, j++,  pi[i] = 1 a b c d e f d e f a b c d e f a b c
+ 
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 2
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 3
+
+
+
+Prefix function for string:
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2 3
+
+
+-----------------------------------------
+Find cyclic shift
+
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2 3
+i
+Cyclic shift still not found, size = 6, pi[i] = 3, size != pi[i] Go next, i++
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2 3
+i
+Cyclic shift still not found, size = 6, pi[i] = 4, size != pi[i] Go next, i++
+
+a b c d e f d e f a b c d e f a b c
+ 
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2 3
+i
+Cyclic shift still not found, size = 6, pi[i] = 5, size != pi[i] Go next, i++
+
+a b c d e f d e f a b c d e f a b c
+0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2 3
+i
+Found cyclic shift!!! Size = 6, pi[i] = 6 Cyclic shift index: 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Входные данные:
+
+abcdef 
+efabcd
+Результат работы программы:
+-----------------------------------------
+Calculating prefix function
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j i
+s[i] != s[j], i++, pi[i] = 0
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+e f a b c d a b c d e f a b c d e f
+ 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+e f a b c d a b c d e f a b c d e f
+ 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] != s[j], i++, pi[i] = 0
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 1
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 2
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 0 0 0 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 3
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 0 0 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 4
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 0 0 0 0
+j	i
+s[i] == s[j], i++, j++,  pi[i] = 5 e f a b c d a b c d e f a b c d e f
+ 
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 0 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 6
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 0 0
+j	i
+s[i] != s[j], j = 0
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 0 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 1
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 0
+j	i
+s[i] == s[j], i++, j++, pi[i] = 2
+
+
+
+Prefix function for string:
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2
+
+
+-----------------------------------------
+Find cyclic shift
+
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2
+i
+ 
+Cyclic shift still not found, size = 6, pi[i] = 2, size != pi[i] Go next, i++
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2
+i
+Cyclic shift still not found, size = 6, pi[i] = 3, size != pi[i] Go next, i++
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2
+i
+Cyclic shift still not found, size = 6, pi[i] = 4, size != pi[i] Go next, i++
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2
+i
+Cyclic shift still not found, size = 6, pi[i] = 5, size != pi[i] Go next, i++
+
+e f a b c d a b c d e f a b c d e f
+0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 1 2
+i
+Found cyclic shift!!! Size = 6, pi[i] = 6 Cyclic shift index: 4
+ 
+
+ 
