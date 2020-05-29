@@ -1,0 +1,14 @@
+TESTS FOR 2 PROGRAM:
+
+
+Test 1:
+ACTANCA
+A$$A
+$
+
+
+Test 2:
+CATNATCAT 
+#AT
+#
+
